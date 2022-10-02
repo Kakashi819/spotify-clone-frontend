@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+nav {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav ul {
+  display: flex; /* ul mein sare items horizontal aa jayenge  */
+  list-style-type: none; /*dot hat jayenge */
+  height: 62px;
+
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+nav ul li {
+  padding: 0 8px;
+}
+
+.brand img {
+  height: 43px;
+  width: 36px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.container {
+  min-height: 63vh;
+  background-color: black;
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  margin: 34px auto;
+  width: 65%;
+  padding: 34px;
+  border-radius: 12px;
+  background-image: url("images/bg.jpg");
+}
+
+/* input mein jo my progressbar ki width 80% and textalingcenter */
+.bottom{
+    bottom: 0;
+    position: sticky;
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 134px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.icons {
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+#myprogressBar {
+    margin-top: 15px;
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songlistcontainer{
+  margin-top: 70px;
+}
+
+.songItem {
+  margin-top: 20px;
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 23px;
+}
+
+.songItem img{
+  width: 43px;
+  border-radius: 23px;
+}
+
+.timestamp i{
+  cursor: pointer;
+}
+
+.songInfo{
+  font-family: "Varela Round", sans-serif;
+  position: absolute;
+  left: 10vw;
+}
+
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  }
+
+  .songItemPlay{
+    margin: 0 8px;
+  }
